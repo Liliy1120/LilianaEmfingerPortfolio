@@ -6,12 +6,21 @@ h1 {
     font-size: 60px;
 }
 
+.avatar {
+    height: 500px;
+    width: 500px;
+}
+
 h2 {
    font-size: 45px;
 }
 
 p {
     font-size: 30px;
+}
+
+.contact {
+    font-size: 25px;
 }
 
 .quizappimg {
