@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+.hide {
+    display: none;
+}
+
 h1 {
     font-size: 60px;
 }
@@ -9,6 +13,8 @@ h1 {
 .avatar {
     height: 500px;
     width: 500px;
+    float: left;
+    padding: 20px;
 }
 
 h2 {
@@ -19,8 +25,18 @@ p {
     font-size: 30px;
 }
 
+.startpage {
+    background-color: aquamarine;
+    height: 800px;
+    width: 100vh;
+    display: block;
+}
+
 .contact {
-    font-size: 25px;
+    font-size: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .quizappimg {
