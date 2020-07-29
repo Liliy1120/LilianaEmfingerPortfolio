@@ -12,18 +12,21 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: 'Open Sans', sans-serif;
 }
 
 /* line 14 */
 h1 {
     font-size: 20px;
     text-align: center;
+    font-family: 'Pacifico', cursive;
 }
 
 /* line 17 */
 h2 {
    font-size: 16px;
    text-align: center;
+   font-family: 'Pacifico', cursive;
 }
 
 /* all of paragraphs */
@@ -40,7 +43,7 @@ p {
 
 /* project page */
 .projectspage {
-    background-color: rgba(255, 255, 255);
+    background-color: rgba(97, 129, 29, 0.9);
     margin-left: -8px;
     margin-right: -8px;
 }
