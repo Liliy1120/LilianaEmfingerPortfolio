@@ -2,49 +2,58 @@
     box-sizing: border-box;
 }
 
-.hide {
-    display: none;
+body {
+    background-image: url("images/liliybackgrond.jpg");
+    /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
+/* line 14 */
 h1 {
-    font-size: 60px;
+    font-size: 20px;
+    text-align: center;
 }
 
-.avatar {
-    height: 500px;
-    width: 500px;
-    float: left;
-    padding: 20px;
-}
-
+/* line 17 */
 h2 {
-   font-size: 45px;
+   font-size: 16px;
+   text-align: center;
 }
 
+/* all of paragraphs */
 p {
-    font-size: 30px;
+    font-size: 14px;
+    text-align: center;
 }
 
+/* startpage */
 .startpage {
-    background-color: aquamarine;
-    height: 800px;
-    width: 100vh;
+    background-color: rgba(255, 255, 255, .3);
     display: block;
 }
 
-.contact {
-    font-size: 35px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+/* project page */
+.projectspage {
+    background-color: rgba(255, 255, 255);
+    margin-left: -8px;
+    margin-right: -8px;
 }
 
+
+/* quizimg */
 .quizappimg {
-    width: 400px;
-    height: 600px;
     display: block;
+    float: left;
+    padding:10px;
 }
 
+/* quiz container */
 .container1 {
     position: relative;
     width: 50%;
@@ -52,14 +61,14 @@ p {
     justify-items: flex-start;
 }
 
+/* quiz overlay */
 .overlay1 {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #008CBA;
+    background-color: rgba(255, 255, 255, .8);
     overflow: hidden;
-    width: 54%;
     height: 0;
     transition: .5s ease;
 }
@@ -68,12 +77,14 @@ p {
     height: 100%;
 }
 
+/* text for quiz overlay */
 .text1 {
     color: white;
     font-size: 20px;
     position: absolute;
     top: 50%;
     left: 50%;
+    background-color: teal;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
