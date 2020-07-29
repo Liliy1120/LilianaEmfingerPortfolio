@@ -24,7 +24,7 @@ h1 {
 
 /* line 17 */
 h2 {
-   font-size: 16px;
+   font-size: 20px;
    text-align: center;
    font-family: 'Pacifico', cursive;
 }
@@ -39,6 +39,9 @@ p {
 .startpage {
     background-color: rgba(255, 255, 255, .3);
     display: block;
+    padding: 10px;
+    margin-left:-8px;
+    margin-right: 10px;
 }
 
 /* project page */
@@ -46,6 +49,10 @@ p {
     background-color: rgba(97, 129, 29);
     margin-left: -8px;
     margin-right: -8px;
+}
+
+.featured {
+    font-size: 30px;
 }
 
 /* project page cards */
@@ -60,6 +67,11 @@ p {
     flex-direction: row;
 }
 
+.cards p {
+    font-size: 10px;
+}
+
+
 /* sections in cards */
 section {
     height: 150vh;
@@ -69,24 +81,18 @@ section {
 }
 
 section:first-child {
-    height: 50vh;
+    height: 70vh;
 }
 
-section:last-child {
-    height: 100vh;
-}
-
-.cards p {
-    font-size: 10px;
-    padding-left: 5px;
-}
 
 /* quizimg */
 .quizappimg {
-    width: 100px;
-    height: 100px;
     float: left;
+    width: 50px;
+    height: 100px;
+    margin: 0 auto;
 }
+
 
 /* quiz container */
 .container1 {
@@ -130,4 +136,7 @@ section:last-child {
 
 .contactpage  {
     background-color: teal;
+    margin-left: -8px;
+    margin-bottom: -10px;
+    height: 100vh;
 }
