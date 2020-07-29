@@ -56,20 +56,21 @@
         <!-- end cards -->
 
         <section class='contactpage' id="contactpage">
+            <p>Scroll up for more</p>
             <form action=”mailto:liliyemfinger@yahoo.com” method=”POST” enctype=”multipart/form-data”>
                 <label for="fname">Full Name<br></label>
-                <input type="text" name="fname" id="fname" placeholder="Your Name" required>
+                <input class="textin" type="text" name="fname" id="fname" placeholder="Your Name" required>
 
                 <label for="phone"><br>Phone Number<br></label>
-                <input class='phone' type="tel" name="phone" id="phone" placeholder="(555)555-5555" minlength="10" maxlength="10" required>
+                <input class="phone textin" type="tel" name="phone" id="phone" placeholder="(555)555-5555" minlength="10" maxlength="10" required>
 
                 <label for="email"><br>Email<br></label>
-                <input type="email" name="tel" id="email" placeholder="youremail@email.com" required>
+                <input class="textin" type="email" name="tel" id="email" placeholder="youremail@email.com" required>
 
                 <label for="subject"><br>Send me a message :)<br></label>
                 <textarea name="subject" id="subject" cols="20" rows="10"></textarea>
                 <br>
-                <input class='submit' type="submit" value="submit">
+                <button class="submit">Submit</button>
             </form>
         </section>
         <script src="port.js"></script>
