@@ -158,3 +158,8 @@ form {
     border-radius: 10px;
     color:rgb(102, 89, 76);
 }
+
+/* lab bkgrd */
+.labbackg {
+    background-color:rgb(183, 183, 164);
+}
