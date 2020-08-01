@@ -4,11 +4,10 @@
 
 a {
     text-decoration: none;
-    color: rgb(240, 239, 235);
+    color: black;
 }
 
 .link {
-    font-family: 'Ranchers', cursive;
     font-size: 20px;
 }
 
@@ -18,28 +17,19 @@ a {
 
 /* homepage for index.html */
 .homepage {
-    background-image: url("images/background.jpg"); 
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size:500px 800px;
-    font-family: 'Quicksand', sans-serif; 
-    background-color: rgb(240, 239, 235);
+    background-color: #ccc;
 }
 
 /* line 14 */
 h1 {
     font-size: 20px;
     text-align: center;
-    font-family: 'Pacifico', cursive;
 }
 
 /* line 17 */
 h2 {
    font-size: 20px;
    text-align: center;
-   font-family: 'Pacifico', cursive;
 }
 
 /* all of paragraphs */
@@ -50,7 +40,7 @@ p {
 
 /* startpage */
 .startpage {
-    background-color: rgba(255, 255, 255, .3);
+    background-color:#ccc;
     display: block;
     padding: 10px;
     margin-left:-8px;
@@ -60,13 +50,12 @@ p {
 
 /* project page */
 .projectspage {
-    background-color: rgba(165, 165, 141);
+    background-color: #ccc;
     margin-left: -8px;
     margin-right: -8px;
 }
 
 .featured {
-    font-family: 'Ranchers', cursive;
     font-size: 30px;
 }
 
@@ -84,26 +73,25 @@ p {
     padding-left:10px;
     padding-right: 10px;
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 
 
 /* sections in cards */
 section {
-    height: 150vh;
     width: 100vw;
-    position: sticky;
-    top: -1px;
+}
+
+img {
+    text-align: center;
 }
 
 
 
 /* quizimg */
 .quizappimg {
-    float: left;
-    width: 50px;
-    height: 100px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -111,19 +99,17 @@ section {
 /* quiz container */
 .container1 {
     position: relative;
-    height: 100px;
-    width: 200px;
     overflow: hidden;
 }
 
+/*  */
 .moreworkbtn {
-    font-family: 'Ranchers', cursive;
     font-size: 16px;
     width: 300px;
     text-align: center;
     align-self:center;
     border-radius: 4px;
-    background-color: rgb(221, 190, 169);
+    background-color: #ccc;
     border: none;
     margin-top: 50px;
 }
@@ -132,10 +118,7 @@ section {
 /* contactpage */
 
 .contactpage  {
-    background-color:rgb(221, 190, 169);
-    margin-left: -8px;
-    margin-bottom: -10px;
-    height: 100vh;
+    background-color:#ccc;
 }
 
 form {
@@ -148,18 +131,18 @@ form {
 
 .textin {
     border: none;
-    border-bottom: 2px solid rgb(183, 183, 164);
-    background-color: rgb(240, 239, 235);
+    border-bottom: 2px solid black;
+    background-color: #ccc;
 }
 
 .submit {
     margin-top: 10px;
-    background-color: rgb(193, 178, 155);
+    background-color: #ccc;
     border-radius: 10px;
-    color:rgb(102, 89, 76);
+    color:black;
 }
 
 /* lab bkgrd */
 .labbackg {
-    background-color:rgb(183, 183, 164);
+    background-color:#ccc;
 }
