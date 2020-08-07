@@ -2,9 +2,46 @@
     box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+}
+
 a {
     text-decoration: none;
     color: black;
+}
+
+.profileimg {
+    border: solid black 2px;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    margin: 30px;
+    background-color: white;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}
+
+
+.placeholder {
+    border: solid 2px black;
+    height:250px;
+    width:200px;
+    margin: 40px auto;
+    background-color: white;
+}
+
+.description {
+    margin-left: 10px;
+}
+
+
+.description p, .description h2 {
+    text-align: left;
 }
 
 .link {
@@ -40,19 +77,13 @@ p {
 
 /* startpage */
 .startpage {
-    background-color:#ccc;
-    display: block;
-    padding: 10px;
-    margin-left:-8px;
-    margin-right: 10px;
-    height: 60vh;
+    background-color:dimgray;
+    /* height: 60vh; */
 }
 
 /* project page */
 .projectspage {
     background-color: #ccc;
-    margin-left: -8px;
-    margin-right: -8px;
 }
 
 .featured {
@@ -80,7 +111,8 @@ p {
 
 /* sections in cards */
 section {
-    width: 100vw;
+    width: 80vw;
+    margin: auto;
 }
 
 img {
@@ -97,10 +129,6 @@ img {
 
 
 /* quiz container */
-.container1 {
-    position: relative;
-    overflow: hidden;
-}
 
 /*  */
 .moreworkbtn {
@@ -118,7 +146,7 @@ img {
 /* contactpage */
 
 .contactpage  {
-    background-color:#ccc;
+    background-color: #bfbfbf;
 }
 
 form {
@@ -145,4 +173,47 @@ form {
 /* lab bkgrd */
 .labbackg {
     background-color:#ccc;
+}
+
+footer ul {
+    padding: 60px;
+    margin:auto;
+    list-style-type: none;
+}
+
+footer li {
+    margin-right: 20px;
+    display: inline-block;
+}
+
+footer {
+    background-color: #333;
+    color:white;
+    margin-top: 40px;
+    text-align: center;
+    background-color: darkgray;
+}
+
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+footer a {
+    color: white;
+}
+
+@media only screen and (min-width: 1024px) {
+    section, header {
+        margin: auto;
+    } 
+
+    
+    .submit {
+        flex-direction: row;
+    }
+
+    .card {
+        flex-direction: row;
+    }
 }
