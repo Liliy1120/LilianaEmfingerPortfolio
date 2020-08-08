@@ -65,6 +65,7 @@ body {
 .menuname {
     font-family: 'Abril Fatface', cursive;
     font-size: 20px;
+    cursor: pointer;
 }
 
 
@@ -231,7 +232,7 @@ section {
 }
 
 .quizappimg2 {
-    margin:auto;
+    margin: auto;
     max-width: 150px;
 }  
 
