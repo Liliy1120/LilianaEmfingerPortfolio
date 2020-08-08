@@ -12,13 +12,27 @@
     </head>
 
     <body class="homepage">
-        <div>
+            <!-- The overlay -->
+            <div id="myNav" class="overlay">
+                <!-- Button to close the overlay navigation -->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                
+                <!-- Overlay content -->
+                <div class="overlay-content">
+                <a href="lab.html"> More Projects</a>
+                <a href="https://www.linkedin.com/in/liliana-emfinger/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/Liliy1120" target="_blank">Github</a>
+                </div>
+            </div>
+            
+            <!-- Use any element to open/show the overlay navigation menu -->
+            <span onclick="openNav()" class="menuname">Menu</span> 
             <ul id="content">
                 <li class="selected">
                     <header class="startpage">
                         <div class="profileimg">
                         </div>
-                        <div>
+                        <div class="intro">
                             <h2>Hello there,<br> my name is Liliana Emfinger. <br>I'm an aspiring fullstack developer in Southern California. </h2>
                             <p>I'm a web dev student at Thinkful. I enjoy coding because I love to be creative and have always loved to use my creativity to problem solve. Making ideas come to life is an amazing privilege, that I can't wait to explore further.</p>
                             <p>Besides coding, you can catch me hanging out with family or one of my three dogs, doing a bible study, or just being a foodie in local interesting eatery.</p>
@@ -27,7 +41,7 @@
                 </li>
 
                 <li>
-                    <section class="projectspage">
+                    <section id="projectspage"class="projectspage">
                         <h2 class='featured'>Featured Projects</h2>
                         <div class="cards">
                             <!-- start card -->
@@ -59,20 +73,20 @@
                 </li>
 
                 <li>
-                    <section class='contactpage' id="contactpage">
+                    <section id="contactpage"class='contactpage' id="contactpage">
                         <h2>Like My Work? <br> Fill Out the Form and Contact Me</h2>
-                        <form action=”mailto:liliyemfinger@yahoo.com” method=”POST” enctype=”multipart/form-data”>
+                        <form action="mailto:liliyemfinger@gmail.com?subject=Lilana, your portfolio caught my interest." method="post" enctype="text/plain">
                             <label for="fname">Full Name<br></label>
-                            <input class="textin" type="text" name="fname" id="fname" placeholder="Your Name" required>
+                            <input class="textin" type="text" name="Name" id="fname" placeholder="Your Name" required>
 
                             <label for="phone"><br>Phone Number<br></label>
-                            <input class="phone textin" type="tel" name="phone" id="phone" placeholder="(555)555-5555" minlength="10" maxlength="10" required>
+                            <input class="phone textin" type="tel" name="Phone" id="phone" placeholder="(555)555-5555" minlength="10" maxlength="10" required>
 
                             <label for="email"><br>Email<br></label>
-                            <input class="textin" type="email" name="tel" id="email" placeholder="youremail@email.com" required>
+                            <input class="textin" type="email" name="Email" id="email" placeholder="youremail@email.com" required>
 
-                            <label for="subject"><br>Send me a message :)<br></label>
-                            <textarea name="subject" id="subject" cols="20" rows="10"></textarea>
+                            <label for="subject"><br>Send Me an Email<br></label>
+                            <textarea name="Subject" id="subject" cols="20" rows="10"></textarea>
                             <br>
                             <button class="submit">Submit</button>
                         </form>
@@ -84,12 +98,6 @@
                 </div>
             </ul>
         </div>
-        <footer class="menu">
-            <ul>
-                <li><a href="https://github.com/Liliy1120" target="_blank">Github</a></li>
-                <li><a href="https://www.linkedin.com/in/liliana-emfinger/" target="_blank">LinkedIn</a></li>
-            </ul>
-        </footer>
         <script src="port.js"></script>
     </body>
 </html>

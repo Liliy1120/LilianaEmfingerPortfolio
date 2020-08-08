@@ -6,24 +6,71 @@ body {
     font-family: 'Baloo Tamma 2', cursive;
 }
 
-footer li {
-    list-style-type: none;
-    margin:auto;
-    display: inline;
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgba(27, 35, 106, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
 
-footer {
-    background-color:rgba(136, 167, 195, 1);
-    color:white;
-    position: fixed;
-    bottom:0px;
-    z-index: 1;
-    width:100%;
-    text-align: center;
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
 }
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+.overlay a {font-size: 20px}
+.overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+}
+} 
+
+.menuname {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 20px;
+}
+
 
 a:visited {
     color: white;
+    text-shadow: 2px 2px rgb(102, 89, 76);
 }
 
 
@@ -66,7 +113,7 @@ h1 {
 }
 
 /* line 17 */
-h2 {
+.link, h2 {
    font-size: 20px;
    text-align: center;
    font-family: 'Abril Fatface', cursive;
@@ -88,7 +135,11 @@ p{
     height: 100vh;
     scroll-behavior: smooth;
     padding: 20px;
-    margin-bottom: 200px;
+}
+
+.intro {
+    padding-bottom: 200px;
+    overflow-x: hidden;
 }
 
 /* control buttons */
@@ -169,7 +220,6 @@ p{
 section {
     margin: auto;
     overflow: scroll;
-    padding-bottom: 200px;
 }
 
 
@@ -179,6 +229,11 @@ section {
     margin: 0 auto;
     max-width: 150px;
 }
+
+.quizappimg2 {
+    margin:auto;
+    max-width: 150px;
+}  
 
 /* link to lab on projects page */
 .moreworkbtn {

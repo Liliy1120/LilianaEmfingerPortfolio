@@ -1,12 +1,4 @@
 
-$(document).ready(function() {
-$('.linktohome').on('click', function(){
-    $(".contactpage").show();
-    $(".projectspage").hide();
-    $(".startpage").hide();
-});
-});
-
 $(function() {
 	function enableButtons() {
   	var index = $('li.selected').index();
@@ -22,4 +14,14 @@ $(function() {
     enableButtons();
   });
 });
+
+/* Open when someone clicks on the span element */
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+  }
+  
+  /* Close when someone clicks on the "x" symbol inside the overlay */
+  function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+  } 
 
