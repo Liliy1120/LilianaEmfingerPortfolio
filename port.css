@@ -2,28 +2,33 @@
     box-sizing: border-box;
 }
 
-
-.menu li {
-    list-style-type: none;
-    margin:auto;
+body {
+    font-family: 'Baloo Tamma 2', cursive;
 }
 
-.menu {
-    background-color: #333;
+footer li {
+    list-style-type: none;
+    margin:auto;
+    display: inline;
+}
+
+footer {
+    background-color:rgba(136, 167, 195, 1);
     color:white;
-    background-color: darkgray;
-    position: sticky;
+    position: fixed;
+    bottom:0px;
     z-index: 1;
-    border-radius: 200px;
+    width:100%;
+    text-align: center;
+}
+
+a:visited {
+    color: white;
 }
 
 
 a:hover{
     text-decoration: underline;
-}
-
-.menu a {
-    color: white;
 }
 
 
@@ -46,10 +51,8 @@ a:hover{
 /* homepage for index.html */
 .homepage {
     background-image: url("images/background.jpg"); 
-    background-attachment: fixed;
     background-repeat:repeat;
     background-size: 2000px;
-    font-family: 'Quicksand', sans-serif; 
     background-color: rgb(240, 239, 235);
     display: flex;
     flex-direction: row;
@@ -59,20 +62,23 @@ a:hover{
 h1 {
     font-size: 20px;
     text-align: center;
-    font-family: 'Pacifico', cursive;
+    font-family: 'Abril Fatface', cursive;
 }
 
 /* line 17 */
 h2 {
-   font-size: 16px;
+   font-size: 20px;
    text-align: center;
-   font-family: 'Pacifico', cursive;
+   font-family: 'Abril Fatface', cursive;
+   color: rgb(242, 149, 89);
+   text-shadow: 2px 2px rgb(102, 89, 76);
 }
 
 /* all of paragraphs */
-p {
-    font-size: 14px;
+p{
+    font-size: 16px;
     text-align: center;
+    color:rgb(27, 35, 106);
 }
 
 /* startpage */
@@ -82,6 +88,7 @@ p {
     height: 100vh;
     scroll-behavior: smooth;
     padding: 20px;
+    margin-bottom: 200px;
 }
 
 /* control buttons */
@@ -132,12 +139,12 @@ p {
 
 /* project page */
 .projectspage {
-    background-color: rgba(165, 165, 141);
+    background-color:rgba(255, 255, 255, .3);
     height: 100vh;
+    color: black;
 }
 
 .featured {
-    font-family: 'Ranchers', cursive;
     font-size: 30px;
 }
 
@@ -162,6 +169,7 @@ p {
 section {
     margin: auto;
     overflow: scroll;
+    padding-bottom: 200px;
 }
 
 
@@ -174,13 +182,12 @@ section {
 
 /* link to lab on projects page */
 .moreworkbtn {
-    font-family: 'Ranchers', cursive;
     font-size: 16px;
     width: 300px;
     text-align: center;
     align-self:center;
     border-radius: 4px;
-    background-color: rgb(221, 190, 169);
+    background-color: rgb(242, 149, 89);
     border: none;
     margin-top: 50px;
 }
@@ -189,7 +196,7 @@ section {
 /* contactpage */
 
 .contactpage  {
-    background-color:rgb(221, 190, 169);
+    background-color:rgba(255, 255, 255, .3);
     margin-left: -8px;
     margin-bottom: -10px;
     height: 100vh;
