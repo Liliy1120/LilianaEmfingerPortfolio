@@ -12,67 +12,84 @@
     </head>
 
     <body class="homepage">
-        <section class="startpage">
-            <div>
-                <h2>Hello there,<br> my name is Liliana Emfinger. <br>I'm an aspiring fullstack developer in Southern California. </h2>
-                <p>I'm a web dev student at Thinkful. I enjoy coding because I love to be creative and have always loved to use my creativity to problem solve. Making ideas come to life is an amazing privilege, that I can't wait to explore further.</p>
-                <p>Besides coding, you can catch me hanging out with family or one of my three dogs, doing a bible study, or just being a foodie in local interesting eatery.</p>
-                <p>Scroll down to see my work</p>
-            </div>
-        </section>
+        <div class="menu">
+            <ul>
+                <li><a href="https://github.com/Liliy1120">Github</a></li>
+                <li><a href="https://www.linkedin.com/in/liliana-emfinger/">LinkedIn</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul id="content">
+                <li class="selected">
+                    <header class="startpage">
+                        <div class="profileimg">
+                        </div>
+                        <div>
+                            <h2>Hello there,<br> my name is Liliana Emfinger. <br>I'm an aspiring fullstack developer in Southern California. </h2>
+                            <p>I'm a web dev student at Thinkful. I enjoy coding because I love to be creative and have always loved to use my creativity to problem solve. Making ideas come to life is an amazing privilege, that I can't wait to explore further.</p>
+                            <p>Besides coding, you can catch me hanging out with family or one of my three dogs, doing a bible study, or just being a foodie in local interesting eatery.</p>
+                        </div>
+                    </header>
+                </li>
 
-        <section class="projectspage">
-            <h2 class='featured'>Featured Projects</h2>
-            <div class="cards">
-                <!-- start card -->
-                <div class="card">
-                    <div class="container1">
-                        <img class='quizappimg' src="images/quizapp.PNG" alt="screenshot of quizapp">
-                    </div>
-                    <div>
-                        <p>Quiz App</p>
-                        <p>Front-end Quiz app that takes users through 8 questions. App grades users and is able to give feedback after every question. App gives overall score and is able to restart.</p>
-                        <p>HTML| Css | JavaScript & jQuery</p>
-                        <p class="repo"><a href="https://github.com/Liliy1120/quizapp1">Click here to view repo</a></p>
-                    </div>
+                <li>
+                    <section class="projectspage">
+                        <h2 class='featured'>Featured Projects</h2>
+                        <div class="cards">
+                            <!-- start card -->
+                            <div class="card">
+                                <img class='quizappimg' src="images/quizapp.PNG" alt="screenshot of quizapp">
+                                <div>
+                                    <p>Quiz App</p>
+                                    <p>Front-end Quiz app that takes users through 8 questions. App grades users and is able to give feedback after every question. App gives overall score and is able to restart.</p>
+                                    <p>HTML| Css | JavaScript & jQuery</p>
+                                    <p class="repo"><a href="https://github.com/Liliy1120/quizapp1">Click here to view repo</a></p>
+                                </div>
+                            </div>
+                            <!-- end card -->
+                            <!-- start card -->
+                            <div class="card">
+                                    <img class='quizappimg' src="images/quizapp.PNG" alt="screenshot of quizapp">
+                                <div>
+                                    <p>Quiz App</p>
+                                    <p>Front-end Quiz app that takes users through 8 questions. App grades users and is able to give feedback after every question. App gives overall score and is able to restart.</p>
+                                    <p>HTML| Css | JavaScript & jQuery</p>
+                                    <p class="repo"><a href="https://github.com/Liliy1120/quizapp1">Click here to view repo</a></p>
+                                </div>
+                            </div>
+                            <!-- end card -->
+                        <a href="lab.html" class="moreworkbtn">Click Me to view more work</a>
+                        <p><i class="arrow down tocontact"></i><a href="index.html#contactpage"></a></p>
+                    </section>
+                    <!-- end cards -->
+                </li>
+
+                <li>
+                    <section class='contactpage' id="contactpage">
+                        <p>Scroll up for more</p>
+                        <form action=”mailto:liliyemfinger@yahoo.com” method=”POST” enctype=”multipart/form-data”>
+                            <label for="fname">Full Name<br></label>
+                            <input class="textin" type="text" name="fname" id="fname" placeholder="Your Name" required>
+
+                            <label for="phone"><br>Phone Number<br></label>
+                            <input class="phone textin" type="tel" name="phone" id="phone" placeholder="(555)555-5555" minlength="10" maxlength="10" required>
+
+                            <label for="email"><br>Email<br></label>
+                            <input class="textin" type="email" name="tel" id="email" placeholder="youremail@email.com" required>
+
+                            <label for="subject"><br>Send me a message :)<br></label>
+                            <textarea name="subject" id="subject" cols="20" rows="10"></textarea>
+                            <br>
+                            <button class="submit">Submit</button>
+                        </form>
+                    </section>
+                </li>
+                <div id="controls">
+                    <button type="button" id="up" data-dir="-1"></button>
+                    <button type="button" id="down" data-dir="1"></button>
                 </div>
-                <!-- end card -->
-                <!-- start card -->
-                <div class="card">
-                    <div class="container1">
-                        <img class='quizappimg' src="images/quizapp.PNG" alt="screenshot of quizapp">
-                    </div>
-                    <div>
-                        <p>Quiz App</p>
-                        <p>Front-end Quiz app that takes users through 8 questions. App grades users and is able to give feedback after every question. App gives overall score and is able to restart.</p>
-                        <p>HTML| Css | JavaScript & jQuery</p>
-                        <p class="repo"><a href="https://github.com/Liliy1120/quizapp1">Click here to view repo</a></p>
-                    </div>
-                </div>
-                <!-- end card -->
-            <button class="moreworkbtn"><a href="lab.html">Click Me to view more work</button>
-            <p class="link">Like my work? Keep scrolling to Contact me!</p>
-        </section>
-        <!-- end cards -->
-
-        <section class='contactpage' id="contactpage">
-            <p>Scroll up for more</p>
-            <form action=”mailto:liliyemfinger@yahoo.com” method=”POST” enctype=”multipart/form-data”>
-                <label for="fname">Full Name<br></label>
-                <input class="textin" type="text" name="fname" id="fname" placeholder="Your Name" required>
-
-                <label for="phone"><br>Phone Number<br></label>
-                <input class="phone textin" type="tel" name="phone" id="phone" placeholder="(555)555-5555" minlength="10" maxlength="10" required>
-
-                <label for="email"><br>Email<br></label>
-                <input class="textin" type="email" name="tel" id="email" placeholder="youremail@email.com" required>
-
-                <label for="subject"><br>Send me a message :)<br></label>
-                <textarea name="subject" id="subject" cols="20" rows="10"></textarea>
-                <br>
-                <button class="submit">Submit</button>
-            </form>
-        </section>
+            </ul>
+        </div>
         <script src="port.js"></script>
     </body>
 </html>

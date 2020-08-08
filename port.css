@@ -2,30 +2,57 @@
     box-sizing: border-box;
 }
 
-a {
-    text-decoration: none;
-    color: rgb(240, 239, 235);
+
+.menu li {
+    list-style-type: none;
+    margin:auto;
 }
+
+.menu {
+    background-color: #333;
+    color:white;
+    background-color: darkgray;
+    position: sticky;
+    z-index: 1;
+    border-radius: 200px;
+}
+
+
+a:hover{
+    text-decoration: underline;
+}
+
+.menu a {
+    color: white;
+}
+
 
 .link {
     font-family: 'Ranchers', cursive;
     font-size: 20px;
 }
 
-.repo {
-    font-size: 25px;
+.profileimg {
+    border: solid black 2px;
+    width: 200px;
+    height: 200px;
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    border-radius: 100px;
+    margin: 30px auto;
+    background-image: url(images/resumeimage.png);
 }
 
 /* homepage for index.html */
 .homepage {
     background-image: url("images/background.jpg"); 
-    /* Create the parallax scrolling effect */
     background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size:500px 800px;
+    background-repeat:repeat;
+    background-size: 2000px;
     font-family: 'Quicksand', sans-serif; 
     background-color: rgb(240, 239, 235);
+    display: flex;
+    flex-direction: row;
 }
 
 /* line 14 */
@@ -52,17 +79,61 @@ p {
 .startpage {
     background-color: rgba(255, 255, 255, .3);
     display: block;
-    padding: 10px;
-    margin-left:-8px;
-    margin-right: 10px;
-    height: 60vh;
+    height: 100vh;
+    scroll-behavior: smooth;
+    padding: 20px;
+}
+
+/* control buttons */
+#controls {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+}
+
+#up, #down {
+    border: solid black;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 20px;
+    background-color: transparent;
+}
+
+
+#down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    margin-top: 10px;
+}
+
+#up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+/* content in each section */
+#content li {
+    position: fixed;
+    top: 100%;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    transition-duration: 1s;
+}
+
+#content li.selected {
+    top: 0px;
+    z-index: -1;
 }
 
 /* project page */
 .projectspage {
     background-color: rgba(165, 165, 141);
-    margin-left: -8px;
-    margin-right: -8px;
+    height: 100vh;
 }
 
 .featured {
@@ -77,45 +148,30 @@ p {
 /* project page cards */
 .cards {
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
 }
 
 .card {
-    padding-left:10px;
-    padding-right: 10px;
     display:flex;
-    flex-direction: row;
+    flex-direction:column;
 }
 
 
 
 /* sections in cards */
 section {
-    height: 150vh;
-    width: 100vw;
-    position: sticky;
-    top: -1px;
+    margin: auto;
 }
 
 
 
 /* quizimg */
 .quizappimg {
-    float: left;
-    width: 50px;
-    height: 100px;
     margin: 0 auto;
+    max-width: 200px;
 }
 
-
-/* quiz container */
-.container1 {
-    position: relative;
-    height: 100px;
-    width: 200px;
-    overflow: hidden;
-}
-
+/* link to lab on projects page */
 .moreworkbtn {
     font-family: 'Ranchers', cursive;
     font-size: 16px;
@@ -145,12 +201,13 @@ form {
     align-items: center;
 }
 
-
+/* input for form */
 .textin {
     border: none;
     border-bottom: 2px solid rgb(183, 183, 164);
     background-color: rgb(240, 239, 235);
 }
+
 
 .submit {
     margin-top: 10px;
@@ -162,4 +219,23 @@ form {
 /* lab bkgrd */
 .labbackg {
     background-color:rgb(183, 183, 164);
+    background-image: url(images/background.jpg);
+    background-size: 2000px 2000px;
+    background-repeat: no-repeat;
 }
+
+
+@media only screen and (min-width: 1024px) {
+    section, header {
+        margin: auto;
+    } 
+
+    .submit {
+        flex-direction: row;
+    }
+
+    .card {
+        flex-direction: row;
+    }
+}
+
