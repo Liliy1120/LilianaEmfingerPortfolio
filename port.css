@@ -6,6 +6,10 @@ body {
     margin: 0;
 }
 
+h2 {
+    text-align: center;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -16,13 +20,11 @@ a {
     width: 200px;
     height: 200px;
     border-radius: 100px;
-    margin: 30px;
+    margin: 30px auto;
     background-color: white;
 }
 
 header {
-    display: flex;
-    flex-direction: row;
     text-align: left;
 }
 
@@ -40,9 +42,9 @@ header {
 }
 
 
-.description p, .description h2 {
+/* .description p, .description h2 {
     text-align: left;
-}
+} */
 
 .link {
     font-size: 20px;
