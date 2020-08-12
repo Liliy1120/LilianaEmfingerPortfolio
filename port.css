@@ -138,6 +138,13 @@ p{
     padding: 20px;
 }
 
+/* email icon */
+.email {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .intro {
     padding-bottom: 200px;
     overflow-x: hidden;
