@@ -1,27 +1,17 @@
+function toggleIcon() {
+  $('.icon').on('click', function(){
+      $('.icon').toggleClass('active');
+      $('.menu-mobile').slideToggle(300);
+  })
+}
 
-$(function() {
-	function enableButtons() {
-  	var index = $('li.selected').index();
-    var count = $('#content li').length;
-    $('#up').prop('disabled', index === 0);
-    $('#down').prop('disabled', index === count - 1);
-  }
-  enableButtons();
-  $('#controls button').click(function() {
-  	var dir = $(this).data('dir');
-    var index = $('li.selected').index() + dir;
-    $('#content li').removeClass('selected').eq(index).addClass('selected');
-    enableButtons();
-  });
-});
+function closeMobileMenu(){
+  $('.menu-mobile').on('click', 'a', function(){
+      $('.icon').trigger('click');
+  })
+}
 
-/* Open when someone clicks on the span element */
-function openNav() {
-    document.getElementById("myNav").style.width = "100%";
-  }
-  
-  /* Close when someone clicks on the "x" symbol inside the overlay */
-  function closeNav() {
-    document.getElementById("myNav").style.width = "0%";
-  } 
-
+//when the page loads call toggleIcon;
+$(toggleIcon);
+$(closeMobileMenu);
+$(desktopMenu);
