@@ -4,21 +4,23 @@
 
 body {
     font-family:'Times New Roman', Times, serif;
-    line-height: 1.5;
 }
 
+a {
+    text-decoration: none;
+}
 a:visited {
-    color: white;
-    text-shadow: 2px 2px rgb(102, 89, 76);
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-shadow: 0 0 5px #396361;
 }
 
 
-a:hover{
-    text-decoration: underline;
-}
-
+/* portfolio image */
 .profileimg {
-    /* border: solid rgb(224, 206, 215) 2px; */
     border: black solid 3px;
     border-radius: 100px;
     width: 200px;
@@ -30,8 +32,6 @@ a:hover{
 }
 
 /*Mobile Header and Menu*/
-
-
 .nav, .desktop {
     display: block;
     position: fixed;
@@ -129,61 +129,10 @@ a:hover{
 }
 /* END OF Mobile Menu */
 
-@media only screen and (max-width: 767px) {
-    .desktop, .menu-desktop, .menu-mobile {
-        display: none;
-    }
-}
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    /* START of desktop menu for 768 media query */
-    header.nav, .menu-mobile {
-        display: none;
-    }
-
-    
-    .menu-desktop {
-        width: 100%;
-        padding: 0;
-        line-height: 50px;
-        background-color: #396361;
-        justify-content: space-evenly;
-        flex-direction: row;
-        height: 0;
-        text-align: right;
-        position: absolute;
-        top: 0;
-        right: 0;
-        text-transform: uppercase;
-        letter-spacing: .4em;
-        font-family: 'Raleway', sans-serif;
-    }
-
-    .menu-desktop a {
-        display: inline-flex;
-        margin-right: 30px;
-        height: 0;
-        line-height: 50px;
-        text-decoration: none;
-        color: #fff;
-        justify-content: space-evenly;
-        font-size: .75rem;
-
-    .desktop {
-            background-color: #396361;
-            opacity: .75;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            display: none;
-    }
-    }
-/* END of desktop menu for 768 media query */
-}
-
+/* start page */
 .startpage {
-    background-image: url('images/palmtrees6.jpg');
-    box-shadow: inset 0 0 0 2000px  rgba(3, 15, 15, 0.3);
+    background-image: url('images/palmtrees2.jpg');
+    box-shadow: inset 0 0 0 2000px  rgba(57,99,97, 0.3);
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
@@ -195,7 +144,7 @@ a:hover{
     flex-direction: column;
 }
 
-/* line 14 */
+/* MAIN header*/
 h1 {
     font-size: 30px;
     text-align: left;
@@ -204,10 +153,10 @@ h1 {
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
     letter-spacing: .1em;
-    color:white;
+    color:rgb(255,236,233);
 }
 
-
+/* all headers */
 h2 {
     text-align: center;
     margin: 0;
@@ -216,6 +165,8 @@ h2 {
     font-weight: 300;
     letter-spacing: .1em;
     text-decoration: underline;
+    color: rgb(255,236,233);
+    text-shadow:2px 2px rgba(57,99,97, 0.5);
 }
 
 h3 {
@@ -234,6 +185,15 @@ p {
     color:black;
 }
 
+.card p {
+    padding: 20px;
+}
+
+.aboutmec p {
+    padding: 10px;
+}
+
+/* header paragraph */
 .startp {
     font-size: 20px;
     color: white;
@@ -241,6 +201,7 @@ p {
     text-align: left;
 }
 
+/* home/startpage */
 .home {
     min-height: 80vh;
     align-items: center;
@@ -248,10 +209,12 @@ p {
     padding: 0 60px;
 }
 
+/* home aboutme containers */
 .container {
     margin: 50px;
 }
 
+/* arrow bounce function */
 .arrow {
     position: absolute;
     bottom: 5%;
@@ -307,6 +270,7 @@ p {
     100% { top: 0; }
 }
 
+/* aboutme page */
 .aboutme {
     background-color:#396361;
     min-height: 100vh;
@@ -316,6 +280,7 @@ p {
     justify-content: center;
 }
 
+/* container around aboutme paragraph */
 .aboutmec {
     background-color:white;
     border-radius: 20px;
@@ -325,7 +290,7 @@ p {
 }
 
 
-/* project page */
+/* portfolio page */
 .projectspage {
     background-color:rgb(232,232,232);
     color: black;
@@ -336,17 +301,18 @@ p {
     justify-content: center;
 }
 
+/* title for portfolio */
 .featured {
-    font-size: 30px;
     padding-bottom: 50px;
     text-decoration: underline;
 }
 
+/* repo link on projects page */
 .repo {
     font-size: 15px;
 }
 
-/* project page cards */
+/* project page cards you can add more later */
 .cards {
     display: flex;
     flex-direction:column;
@@ -376,6 +342,7 @@ footer {
     padding-top: 50px;
 }
 
+/* footer icons */
 .icons {
     padding-top: 30px;
     display: flex;
@@ -399,6 +366,106 @@ footer {
 }
 
 
+
+@media only screen and (max-width: 767px) {
+    .desktop, .menu-desktop, .menu-mobile {
+        display: none;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    .profileimg {
+        height: 300px;
+        width: 300px;
+    }
+
+    .startp {
+        font-size: 25px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    .intro {
+        padding: 50px;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .card p {
+        padding: 40px;
+    }
+
+    a {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 35px;
+    }
+
+    .icons {
+        padding-top: 100px;
+    }
+
+    .email {
+        height: 60px;
+    }
+
+    /* START of desktop menu for 768 media query */
+    header.nav, .menu-mobile {
+        display: none;
+    }
+
+    
+    .menu-desktop {
+        width: 100%;
+        padding: 0;
+        line-height: 50px;
+        background-color: #396361;
+        justify-content: space-evenly;
+        flex-direction: row;
+        height: 0;
+        text-align: right;
+        position: absolute;
+        top: 0;
+        right: 0;
+        text-transform: uppercase;
+        letter-spacing: .4em;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .menu-desktop a {
+        display: inline-flex;
+        margin-right: 30px;
+        height: 0;
+        line-height: 50px;
+        text-decoration: none;
+        color: #fff;
+        justify-content: space-evenly;
+        font-size: .75rem;
+
+    .desktop {
+            background-color: #396361;
+            opacity: .75;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            display: none;
+    }
+    }
+/* END of desktop menu for 768 media query */
+}
+
 @media only screen and (min-width: 1024px) {
     section {
         margin: auto;
@@ -408,8 +475,42 @@ footer {
         flex-direction: row;
     }
 
-    .card {
-        flex-direction: row;
+    .quizappimg{
+        max-width: 500px;
+    }
+
+    .startpage {
+        background-size: 1700px 1200px;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 55px;
+    }
+
+    .startp {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .aboutmec {
+        margin: 100px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size:35px;
+    }
+
+    a {
+        font-size: 25px;
+    }
+
+    .menu-desktop {
+        font-size: 40px;
     }
 }
 
