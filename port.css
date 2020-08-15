@@ -212,11 +212,11 @@ p {
 /* headline in home page */
 .intro {
     padding: 50px;
-    box-shadow: 0 2px 5px rgba(0,0,0,.8);
-    background-color: rgba(255,255,255,.3);
-    border-radius: 20px;
     margin-top:20px;
+    background-color: rgba(0,0,0, .3);
+    border-radius: 20px;
 }
+
 
 /* home, aboutme containers */
 .container {
@@ -363,8 +363,6 @@ footer {
     color:white;
 }
 
-
-/* email icon */
 .email {
     height: 50px;
     transform: translateZ(0);
@@ -372,6 +370,9 @@ footer {
     -moz-osx-font-smoothing: grayscale;
     transition-duration: 0.3s;
     transition-property: transform;
+    box-shadow: 10px 10px 21px -1px rgba(0,0,0,0.75);
+    border-radius: 100px;
+    background-color: transparent;
 }
 
 .email:hover, .email:focus, .email:active {
@@ -428,7 +429,7 @@ footer {
     }
 
     .icons {
-        padding-top: 100px;
+        padding-top: 50px;
     }
 
     .email {
