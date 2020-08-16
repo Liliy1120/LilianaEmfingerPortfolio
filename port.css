@@ -312,6 +312,10 @@ p {
     text-decoration: underline;
 }
 
+.fade {
+    text-decoration: none;
+}
+
 /* repo link on projects page */
 .repo {
     font-size: 15px;

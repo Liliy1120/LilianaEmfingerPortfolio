@@ -11,6 +11,18 @@ function closeMobileMenu(){
   })
 }
 
+$( ".fade" ).hover(
+  function() {
+    $( this ).append( $( "<span> (Click here for live app)</span>" ) );
+  }, function() {
+    $( this ).find( "span" ).last().remove();
+  }
+);
+ 
+$( "p.fade" ).hover(function() {
+  $( this ).fadeOut( 100 );
+  $( this ).fadeIn( 500 );
+});
 //when the page loads call toggleIcon;
 $(toggleIcon);
 $(closeMobileMenu);
